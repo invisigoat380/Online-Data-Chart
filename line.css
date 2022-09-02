@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: fantasy;
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(20, 103, 227), rgb(233, 26, 71);
+}
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    grid-template-columns: repeat(4, 50 px);
+    grid-template-rows: minmax(100 px, auto) repeat(5,50 px);
+}
+.calculator-grid >button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px, solid #b02323;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+}
